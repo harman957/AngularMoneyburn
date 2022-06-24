@@ -1,0 +1,16 @@
+<p>day9 works!</p>
+
+<input type="button" name="login" value="Login" (click)="login()">
+<input type="button" name="signup" value="Signup" (click)="signup()">
+
+<div *ngIf="visibility">
+    <p *ngIf="visible; then loginblock else signupblock"></p>
+</div>
+
+    <ng-template #loginblock>
+        <p>Login</p>
+    </ng-template>
+
+    <ng-template #signupblock>
+        <p>Signup</p>
+    </ng-template>

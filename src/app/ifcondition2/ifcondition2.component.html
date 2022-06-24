@@ -1,0 +1,16 @@
+<p>ifcondition2 works!</p>
+
+<input type="text" name="age" placeholder="Enter Age" [(ngModel)]="age">
+<input type="submit" name="s1" value="Submit" (click)="checkage()">
+
+<div *ngIf="visibility">
+    <p *ngIf="visible; then trueblock else falseblock"></p>
+</div>
+
+    <ng-template #trueblock>
+        <p>Issue License</p>
+    </ng-template>
+
+    <ng-template #falseblock>
+        <p>Do not Issue License</p>
+    </ng-template>

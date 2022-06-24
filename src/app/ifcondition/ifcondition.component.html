@@ -1,0 +1,15 @@
+<p>ifcondition works!</p>
+
+<input type="text" name="name" placeholder="Name" [(ngModel)]="name"><br><br>
+<input type="text" name="age" placeholder="Age" [(ngModel)]="age"><br><br>
+<input type="text" name="sal" placeholder="Salary" [(ngModel)]="sal"><br><br>
+
+<input type="button" name="b1" value="Submit" (click)="calculate()"><br><br>
+
+<p *ngIf="visibility">
+Welcome {{ name }} <br/><br/>
+Your age is {{ age }} <br/><br/>
+Your salary is {{ sal }} <br/><br/>
+Your bonus is {{ bonus }} <br/><br>
+Your total salary is {{ tsal }}
+</p>
